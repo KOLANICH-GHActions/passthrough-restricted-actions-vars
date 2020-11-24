@@ -1,0 +1,10 @@
+name: passthrough-restricted-action-vars
+description: |
+  Passes through some absolutely needed environment variables unavailable in `composite` actions.
+author: KOLANICH
+runs:
+  using: "node12"
+  main: "action.js" # ECMA modules are not yet supported by GH Actions
+branding:
+  icon: check-square
+  color: green
